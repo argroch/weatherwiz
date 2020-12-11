@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3 text-center">
+    <h2>Weather Wiz</h2>
+    <p>Let's check the weather... together!</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-3 text-center">
+    <%= form_tag weather_check_path do %>
+      <div class="form-group">
+        <%= text_field_tag :address, nil, placeholder: "Number & Street", class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= text_field_tag :city, nil, placeholder: "City", class: "form-control", id: "city_field" %>, 
+        <%= select_tag :state, options_for_select(@states), include_blank: "State", class: "form-control", id: "state_field" %> 
+      </div>
+      <%= submit_tag "Check It Out", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row" id="weather_results">
+	<% if !@locations.empty? %>
+		<div class="card-deck">
+			<% @locations.reverse.each do |location| %>
+			  <div class="card text-center">
+			    <div class="card-top">
+			      <h4><%= "#{location.city}, #{location.state}" %></h4>
+			    </div>
+			    <div class="card-body">
+			      <h5><%= location.temperature %>&deg; F</h3>
+			      <p class="card-text">
+			      	<%= image_tag "http://openweathermap.org/img/w/#{location.weather_icon}.png", alt: "Weather image icon" %> <%= location.weather_words %>
+			      </p>
+			    </div>
+			  </div>
+			<% end %>
+		</div>
+	<% end %>
+</div>
