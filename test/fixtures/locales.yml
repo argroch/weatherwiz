@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: MyString
+  state: MyString
+  weather_words: MyString
+  weather_icon: MyString
+  temperature: 1.5
+  user_ip: MyString
+
+two:
+  city: MyString
+  state: MyString
+  weather_words: MyString
+  weather_icon: MyString
+  temperature: 1.5
+  user_ip: MyString

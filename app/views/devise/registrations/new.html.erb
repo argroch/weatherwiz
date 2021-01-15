@@ -1,0 +1,33 @@
+<div class="card-deck">
+  <div class="card devise-card">
+    <div class="card-body">
+
+      <h2>Sign Up</h2>
+      <p>
+        <small>We do not share your email with anyone! This is just to sign up and save location searches. Honestly: you can just make up a fake one.</small>
+      </p>
+
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+
+        <div class="form-group">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email Address", class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password (min 6 characters)", class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class: "form-control" %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Sign Up", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>

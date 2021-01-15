@@ -27,6 +27,10 @@
   display: inline;
 }
 
+#weather_results {
+  margin-top: 40px;
+}
+
 .card-deck {
   margin-top: 40px;
 }
@@ -35,5 +39,21 @@
   margin-top: 10px;
   padding: 10px;
   width: 350px;
+}
+
+.form-control {
+	max-width: 400px;
+}
+
+.mtop-25 {
+	margin-top: 25px;
+}
+
+.devise-card {
+	max-width: 450px;
+}
+
+.results_warning {
+	color: gray;
 }
 

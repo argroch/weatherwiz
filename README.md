@@ -1,24 +1,7 @@
-# README
+# Weatherwiz aka WeatherTogether
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Really trying to get better about making ReadMe's... or is it ReadMes? ReadMiis? ReadsMe?
 
-Things you may want to cover:
+Anyway, this one is pretty basic, but is around to show off API handling. But then, is using HTTParty a cheat? And am I being to honest in the pursuit of humor? Only time will tell.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In the face of any storm, we can [WeatherTogether](http://weathertogether.herokuapp.com)!
